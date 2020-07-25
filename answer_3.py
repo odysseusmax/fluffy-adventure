@@ -23,4 +23,4 @@ def find_duplicates(path):
 
 if __name__ == '__main__':
     for d in find_duplicates(pathlib.Path('')): # assuming script is run in the unzipped directory
-        print(d)
+        print(', '.join(d))
