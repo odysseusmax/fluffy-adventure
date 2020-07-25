@@ -5,7 +5,7 @@ import hashlib
 def calc_hash(file):
     hash = hashlib.sha1()
     file_obj = open(file, 'rb')
-    for chunk in file_obj.read(1024):
+    for chunk in file_obj:
         hash.update(chunk)
     file_obj.close()
     return hash.digest()
